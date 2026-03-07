@@ -1,0 +1,1679 @@
+=== Cell 3 (exec 1) ===
+Collecting sentence-transformers
+  Downloading sentence_transformers-5.2.3-py3-none-any.whl.metadata (16 kB)
+Collecting chromadb
+  Downloading chromadb-1.5.2-cp39-abi3-win_amd64.whl.metadata (7.3 kB)
+Collecting umap-learn
+  Downloading umap_learn-0.5.11-py3-none-any.whl.metadata (26 kB)
+Collecting scikit-learn
+  Using cached scikit_learn-1.8.0-cp313-cp313-win_amd64.whl.metadata (11 kB)
+Collecting numpy
+  Using cached numpy-2.4.2-cp313-cp313-win_amd64.whl.metadata (6.6 kB)
+Collecting pandas
+  Using cached pandas-3.0.1-cp313-cp313-win_amd64.whl.metadata (19 kB)
+Collecting matplotlib
+  Using cached matplotlib-3.10.8-cp313-cp313-win_amd64.whl.metadata (52 kB)
+Collecting seaborn
+  Using cached seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting fastapi
+  Downloading fastapi-0.135.1-py3-none-any.whl.metadata (30 kB)
+Collecting uvicorn
+  Downloading uvicorn-0.41.0-py3-none-any.whl.metadata (6.7 kB)
+Collecting scikit-fuzzy
+  Downloading scikit_fuzzy-0.5.0-py2.py3-none-any.whl.metadata (2.6 kB)
+Collecting scipy
+  Using cached scipy-1.17.1-cp313-cp313-win_amd64.whl.metadata (60 kB)
+Collecting langdetect
+  Downloading langdetect-1.0.9.tar.gz (981 kB)
+     ---------------------------------------- 0.0/981.5 kB ? eta -:--:--
+     ---------------------------------------- 0.0/981.5 kB ? eta -:--:--
+     ---------- ----------------------------- 262.1/981.5 kB ? eta -:--:--
+     ------------------------------ ------- 786.4/981.5 kB 1.3 MB/s eta 0:00:01
+     -------------------------------------- 981.5/981.5 kB 1.2 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting tqdm
+  Using cached tqdm-4.67.3-py3-none-any.whl.metadata (57 kB)
+Collecting transformers<6.0.0,>=4.41.0 (from sentence-transformers)
+  Downloading transformers-5.3.0-py3-none-any.whl.metadata (32 kB)
+Collecting huggingface-hub>=0.20.0 (from sentence-transformers)
+  Downloading huggingface_hub-1.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting torch>=1.11.0 (from sentence-transformers)
+  Using cached torch-2.10.0-cp313-cp313-win_amd64.whl.metadata (31 kB)
+Collecting typing_extensions>=4.5.0 (from sentence-transformers)
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Requirement already satisfied: packaging>=20.0 in d:\trademarkia aiml task\.venv\lib\site-packages (from transformers<6.0.0,>=4.41.0->sentence-transformers) (26.0)
+Collecting pyyaml>=5.1 (from transformers<6.0.0,>=4.41.0->sentence-transformers)
+  Using cached pyyaml-6.0.3-cp313-cp313-win_amd64.whl.metadata (2.4 kB)
+Collecting regex!=2019.12.17 (from transformers<6.0.0,>=4.41.0->sentence-transformers)
+  Downloading regex-2026.2.28-cp313-cp313-win_amd64.whl.metadata (41 kB)
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers<6.0.0,>=4.41.0->sentence-transformers)
+  Downloading tokenizers-0.22.2-cp39-abi3-win_amd64.whl.metadata (7.4 kB)
+Collecting typer (from transformers<6.0.0,>=4.41.0->sentence-transformers)
+  Downloading typer-0.24.1-py3-none-any.whl.metadata (16 kB)
+Collecting safetensors>=0.4.3 (from transformers<6.0.0,>=4.41.0->sentence-transformers)
+  Downloading safetensors-0.7.0-cp38-abi3-win_amd64.whl.metadata (4.2 kB)
+Collecting filelock>=3.10.0 (from huggingface-hub>=0.20.0->sentence-transformers)
+  Downloading filelock-3.25.0-py3-none-any.whl.metadata (2.0 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub>=0.20.0->sentence-transformers)
+  Downloading fsspec-2026.2.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.2.0 (from huggingface-hub>=0.20.0->sentence-transformers)
+  Downloading hf_xet-1.3.2-cp37-abi3-win_amd64.whl.metadata (4.9 kB)
+Collecting httpx<1,>=0.23.0 (from huggingface-hub>=0.20.0->sentence-transformers)
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting anyio (from httpx<1,>=0.23.0->huggingface-hub>=0.20.0->sentence-transformers)
+  Using cached anyio-4.12.1-py3-none-any.whl.metadata (4.3 kB)
+Collecting certifi (from httpx<1,>=0.23.0->huggingface-hub>=0.20.0->sentence-transformers)
+  Using cached certifi-2026.2.25-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx<1,>=0.23.0->huggingface-hub>=0.20.0->sentence-transformers)
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting idna (from httpx<1,>=0.23.0->huggingface-hub>=0.20.0->sentence-transformers)
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub>=0.20.0->sentence-transformers)
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting build>=1.0.3 (from chromadb)
+  Downloading build-1.4.0-py3-none-any.whl.metadata (5.8 kB)
+Collecting pydantic>=1.9 (from chromadb)
+  Using cached pydantic-2.12.5-py3-none-any.whl.metadata (90 kB)
+Collecting pybase64>=1.4.1 (from chromadb)
+  Downloading pybase64-1.4.3-cp313-cp313-win_amd64.whl.metadata (9.1 kB)
+Collecting posthog<6.0.0,>=2.4.0 (from chromadb)
+  Downloading posthog-5.4.0-py3-none-any.whl.metadata (5.7 kB)
+Collecting onnxruntime>=1.14.1 (from chromadb)
+  Downloading onnxruntime-1.24.3-cp313-cp313-win_amd64.whl.metadata (5.3 kB)
+Collecting opentelemetry-api>=1.2.0 (from chromadb)
+  Downloading opentelemetry_api-1.40.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting opentelemetry-exporter-otlp-proto-grpc>=1.2.0 (from chromadb)
+  Downloading opentelemetry_exporter_otlp_proto_grpc-1.40.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting opentelemetry-sdk>=1.2.0 (from chromadb)
+  Downloading opentelemetry_sdk-1.40.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting pypika>=0.48.9 (from chromadb)
+  Downloading pypika-0.51.1-py2.py3-none-any.whl.metadata (51 kB)
+Collecting overrides>=7.3.1 (from chromadb)
+  Downloading overrides-7.7.0-py3-none-any.whl.metadata (5.8 kB)
+Collecting importlib-resources (from chromadb)
+  Downloading importlib_resources-6.5.2-py3-none-any.whl.metadata (3.9 kB)
+Collecting grpcio>=1.58.0 (from chromadb)
+  Downloading grpcio-1.78.0-cp313-cp313-win_amd64.whl.metadata (3.9 kB)
+Collecting bcrypt>=4.0.1 (from chromadb)
+  Downloading bcrypt-5.0.0-cp39-abi3-win_amd64.whl.metadata (10 kB)
+Collecting kubernetes>=28.1.0 (from chromadb)
+  Downloading kubernetes-35.0.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting tenacity>=8.2.3 (from chromadb)
+  Using cached tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)
+Collecting mmh3>=4.0.1 (from chromadb)
+  Downloading mmh3-5.2.1-cp313-cp313-win_amd64.whl.metadata (15 kB)
+Collecting orjson>=3.9.12 (from chromadb)
+  Downloading orjson-3.11.7-cp313-cp313-win_amd64.whl.metadata (43 kB)
+Collecting rich>=10.11.0 (from chromadb)
+  Using cached rich-14.3.3-py3-none-any.whl.metadata (18 kB)
+Collecting jsonschema>=4.19.0 (from chromadb)
+  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting requests<3.0,>=2.7 (from posthog<6.0.0,>=2.4.0->chromadb)
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Requirement already satisfied: six>=1.5 in d:\trademarkia aiml task\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (1.17.0)
+Requirement already satisfied: python-dateutil>=2.2 in d:\trademarkia aiml task\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (2.9.0.post0)
+Collecting backoff>=1.10.0 (from posthog<6.0.0,>=2.4.0->chromadb)
+  Downloading backoff-2.2.1-py3-none-any.whl.metadata (14 kB)
+Collecting distro>=1.5.0 (from posthog<6.0.0,>=2.4.0->chromadb)
+  Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3.0,>=2.7->posthog<6.0.0,>=2.4.0->chromadb)
+  Downloading charset_normalizer-3.4.5-cp313-cp313-win_amd64.whl.metadata (39 kB)
+Collecting urllib3<3,>=1.21.1 (from requests<3.0,>=2.7->posthog<6.0.0,>=2.4.0->chromadb)
+  Using cached urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting numba>=0.51.2 (from umap-learn)
+  Downloading numba-0.64.0-cp313-cp313-win_amd64.whl.metadata (3.0 kB)
+Collecting pynndescent>=0.5 (from umap-learn)
+  Downloading pynndescent-0.6.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting joblib>=1.3.0 (from scikit-learn)
+  Using cached joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting threadpoolctl>=3.2.0 (from scikit-learn)
+  Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting tzdata (from pandas)
+  Using cached tzdata-2025.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Using cached contourpy-1.3.3-cp313-cp313-win_amd64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Using cached fonttools-4.61.1-cp313-cp313-win_amd64.whl.metadata (116 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Using cached kiwisolver-1.4.9-cp313-cp313-win_amd64.whl.metadata (6.4 kB)
+Collecting pillow>=8 (from matplotlib)
+  Using cached pillow-12.1.1-cp313-cp313-win_amd64.whl.metadata (9.0 kB)
+Collecting pyparsing>=3 (from matplotlib)
+  Using cached pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting starlette>=0.46.0 (from fastapi)
+  Using cached starlette-0.52.1-py3-none-any.whl.metadata (6.3 kB)
+Collecting typing-inspection>=0.4.2 (from fastapi)
+  Using cached typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting annotated-doc>=0.0.2 (from fastapi)
+  Using cached annotated_doc-0.0.4-py3-none-any.whl.metadata (6.6 kB)
+Collecting click>=7.0 (from uvicorn)
+  Using cached click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: colorama in d:\trademarkia aiml task\.venv\lib\site-packages (from tqdm) (0.4.6)
+Collecting pyproject_hooks (from build>=1.0.3->chromadb)
+  Downloading pyproject_hooks-1.2.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=4.19.0->chromadb)
+  Using cached attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=4.19.0->chromadb)
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=4.19.0->chromadb)
+  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=4.19.0->chromadb)
+  Downloading rpds_py-0.30.0-cp313-cp313-win_amd64.whl.metadata (4.2 kB)
+Collecting websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0 (from kubernetes>=28.1.0->chromadb)
+  Downloading websocket_client-1.9.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting requests-oauthlib (from kubernetes>=28.1.0->chromadb)
+  Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+Collecting durationpy>=0.7 (from kubernetes>=28.1.0->chromadb)
+  Downloading durationpy-0.10-py3-none-any.whl.metadata (340 bytes)
+Collecting llvmlite<0.47,>=0.46.0dev0 (from numba>=0.51.2->umap-learn)
+  Using cached llvmlite-0.46.0-cp313-cp313-win_amd64.whl.metadata (5.1 kB)
+Collecting flatbuffers (from onnxruntime>=1.14.1->chromadb)
+  Using cached flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+Collecting protobuf (from onnxruntime>=1.14.1->chromadb)
+  Downloading protobuf-7.34.0-cp310-abi3-win_amd64.whl.metadata (595 bytes)
+Collecting sympy (from onnxruntime>=1.14.1->chromadb)
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting importlib-metadata<8.8.0,>=6.0 (from opentelemetry-api>=1.2.0->chromadb)
+  Using cached importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting zipp>=3.20 (from importlib-metadata<8.8.0,>=6.0->opentelemetry-api>=1.2.0->chromadb)
+  Using cached zipp-3.23.0-py3-none-any.whl.metadata (3.6 kB)
+Collecting googleapis-common-protos~=1.57 (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb)
+  Using cached googleapis_common_protos-1.72.0-py3-none-any.whl.metadata (9.4 kB)
+Collecting opentelemetry-exporter-otlp-proto-common==1.40.0 (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb)
+  Downloading opentelemetry_exporter_otlp_proto_common-1.40.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting opentelemetry-proto==1.40.0 (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb)
+  Downloading opentelemetry_proto-1.40.0-py3-none-any.whl.metadata (2.4 kB)
+Collecting protobuf (from onnxruntime>=1.14.1->chromadb)
+  Using cached protobuf-6.33.5-cp310-abi3-win_amd64.whl.metadata (593 bytes)
+Collecting opentelemetry-semantic-conventions==0.61b0 (from opentelemetry-sdk>=1.2.0->chromadb)
+  Downloading opentelemetry_semantic_conventions-0.61b0-py3-none-any.whl.metadata (2.5 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=1.9->chromadb)
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.41.5 (from pydantic>=1.9->chromadb)
+  Using cached pydantic_core-2.41.5-cp313-cp313-win_amd64.whl.metadata (7.4 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.11.0->chromadb)
+  Using cached markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in d:\trademarkia aiml task\.venv\lib\site-packages (from rich>=10.11.0->chromadb) (2.19.2)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.11.0->chromadb)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting networkx>=2.5.1 (from torch>=1.11.0->sentence-transformers)
+  Using cached networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting jinja2 (from torch>=1.11.0->sentence-transformers)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting setuptools (from torch>=1.11.0->sentence-transformers)
+  Using cached setuptools-82.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy->onnxruntime>=1.14.1->chromadb)
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting shellingham>=1.3.0 (from typer->transformers<6.0.0,>=4.41.0->sentence-transformers)
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting httptools>=0.6.3 (from uvicorn[standard]>=0.18.3->chromadb)
+  Using cached httptools-0.7.1-cp313-cp313-win_amd64.whl.metadata (3.6 kB)
+Collecting python-dotenv>=0.13 (from uvicorn[standard]>=0.18.3->chromadb)
+  Downloading python_dotenv-1.2.2-py3-none-any.whl.metadata (27 kB)
+Collecting watchfiles>=0.20 (from uvicorn[standard]>=0.18.3->chromadb)
+  Using cached watchfiles-1.1.1-cp313-cp313-win_amd64.whl.metadata (5.0 kB)
+Collecting websockets>=10.4 (from uvicorn[standard]>=0.18.3->chromadb)
+  Using cached websockets-16.0-cp313-cp313-win_amd64.whl.metadata (7.0 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch>=1.11.0->sentence-transformers)
+  Using cached markupsafe-3.0.3-cp313-cp313-win_amd64.whl.metadata (2.8 kB)
+Collecting oauthlib>=3.0.0 (from requests-oauthlib->kubernetes>=28.1.0->chromadb)
+  Downloading oauthlib-3.3.1-py3-none-any.whl.metadata (7.9 kB)
+Downloading sentence_transformers-5.2.3-py3-none-any.whl (494 kB)
+Downloading transformers-5.3.0-py3-none-any.whl (10.7 MB)
+   ---------------------------------------- 0.0/10.7 MB ? eta -:--:--
+   ---------------------------------------- 0.0/10.7 MB ? eta -:--:--
+   - -------------------------------------- 0.5/10.7 MB 1.5 MB/s eta 0:00:07
+   -- ------------------------------------- 0.8/10.7 MB 1.3 MB/s eta 0:00:08
+   --- ------------------------------------ 1.0/10.7 MB 1.4 MB/s eta 0:00:08
+   ---- ----------------------------------- 1.3/10.7 MB 1.3 MB/s eta 0:00:07
+   ----- ---------------------------------- 1.6/10.7 MB 1.3 MB/s eta 0:00:07
+   ------ --------------------------------- 1.8/10.7 MB 1.3 MB/s eta 0:00:07
+   ------- -------------------------------- 2.1/10.7 MB 1.3 MB/s eta 0:00:07
+   -------- ------------------------------- 2.4/10.7 MB 1.3 MB/s eta 0:00:07
+   -------- ------------------------------- 2.4/10.7 MB 1.3 MB/s eta 0:00:07
+   --------- ------------------------------ 2.6/10.7 MB 1.2 MB/s eta 0:00:07
+   ---------- ----------------------------- 2.9/10.7 MB 1.3 MB/s eta 0:00:07
+   ----------- ---------------------------- 3.1/10.7 MB 1.2 MB/s eta 0:00:07
+   ----------- ---------------------------- 3.1/10.7 MB 1.2 MB/s eta 0:00:07
+   ------------ --------------------------- 3.4/10.7 MB 1.1 MB/s eta 0:00:07
+   ------------- -------------------------- 3.7/10.7 MB 1.1 MB/s eta 0:00:07
+   ------------- -------------------------- 3.7/10.7 MB 1.1 MB/s eta 0:00:07
+   -------------- ------------------------- 3.9/10.7 MB 1.1 MB/s eta 0:00:07
+   --------------- ------------------------ 4.2/10.7 MB 1.1 MB/s eta 0:00:06
+   ---------------- ----------------------- 4.5/10.7 MB 1.1 MB/s eta 0:00:06
+   ----------------- ---------------------- 4.7/10.7 MB 1.1 MB/s eta 0:00:06
+   ----------------- ---------------------- 4.7/10.7 MB 1.1 MB/s eta 0:00:06
+   ----------------- ---------------------- 4.7/10.7 MB 1.1 MB/s eta 0:00:06
+   ------------------ --------------------- 5.0/10.7 MB 1.0 MB/s eta 0:00:06
+   ------------------- -------------------- 5.2/10.7 MB 1.0 MB/s eta 0:00:06
+   -------------------- ------------------- 5.5/10.7 MB 1.0 MB/s eta 0:00:06
+   --------------------- ------------------ 5.8/10.7 MB 1.0 MB/s eta 0:00:05
+   ---------------------- ----------------- 6.0/10.7 MB 1.0 MB/s eta 0:00:05
+   ----------------------- ---------------- 6.3/10.7 MB 1.0 MB/s eta 0:00:05
+   ----------------------- ---------------- 6.3/10.7 MB 1.0 MB/s eta 0:00:05
+   ------------------------ --------------- 6.6/10.7 MB 1.0 MB/s eta 0:00:05
+   ------------------------- -------------- 6.8/10.7 MB 1.0 MB/s eta 0:00:04
+   -------------------------- ------------- 7.1/10.7 MB 1.0 MB/s eta 0:00:04
+   --------------------------- ------------ 7.3/10.7 MB 1.0 MB/s eta 0:00:04
+   ---------------------------- ----------- 7.6/10.7 MB 1.0 MB/s eta 0:00:03
+   ----------------------------- ---------- 7.9/10.7 MB 1.0 MB/s eta 0:00:03
+   ----------------------------- ---------- 7.9/10.7 MB 1.0 MB/s eta 0:00:03
+   ------------------------------ --------- 8.1/10.7 MB 1.0 MB/s eta 0:00:03
+   ------------------------------- -------- 8.4/10.7 MB 1.0 MB/s eta 0:00:03
+   -------------------------------- ------- 8.7/10.7 MB 1.0 MB/s eta 0:00:02
+   --------------------------------- ------ 8.9/10.7 MB 1.0 MB/s eta 0:00:02
+   --------------------------------- ------ 8.9/10.7 MB 1.0 MB/s eta 0:00:02
+   ---------------------------------- ----- 9.2/10.7 MB 1.0 MB/s eta 0:00:02
+   ----------------------------------- ---- 9.4/10.7 MB 1.0 MB/s eta 0:00:02
+   ------------------------------------ --- 9.7/10.7 MB 1.0 MB/s eta 0:00:01
+   ------------------------------------- -- 10.0/10.7 MB 1.0 MB/s eta 0:00:01
+   ------------------------------------- -- 10.0/10.7 MB 1.0 MB/s eta 0:00:01
+   -------------------------------------- - 10.2/10.7 MB 1.0 MB/s eta 0:00:01
+   -------------------------------------- - 10.2/10.7 MB 1.0 MB/s eta 0:00:01
+   ---------------------------------------- 10.7/10.7 MB 1.0 MB/s eta 0:00:00
+Downloading huggingface_hub-1.5.0-py3-none-any.whl (596 kB)
+   ---------------------------------------- 0.0/596.3 kB ? eta -:--:--
+   ---------------------------------------- 0.0/596.3 kB ? eta -:--:--
+   ----------------- ---------------------- 262.1/596.3 kB ? eta -:--:--
+   ---------------------------------------- 596.3/596.3 kB 1.2 MB/s eta 0:00:00
+Downloading hf_xet-1.3.2-cp37-abi3-win_amd64.whl (3.6 MB)
+   ---------------------------------------- 0.0/3.6 MB ? eta -:--:--
+   ---------------------------------------- 0.0/3.6 MB ? eta -:--:--
+   -- ------------------------------------- 0.3/3.6 MB ? eta -:--:--
+   ----- ---------------------------------- 0.5/3.6 MB 1.2 MB/s eta 0:00:03
+   -------- ------------------------------- 0.8/3.6 MB 1.1 MB/s eta 0:00:03
+   ----------- ---------------------------- 1.0/3.6 MB 1.0 MB/s eta 0:00:03
+   -------------- ------------------------- 1.3/3.6 MB 1.1 MB/s eta 0:00:03
+   ----------------- ---------------------- 1.6/3.6 MB 1.1 MB/s eta 0:00:02
+   -------------------- ------------------- 1.8/3.6 MB 1.1 MB/s eta 0:00:02
+   ----------------------- ---------------- 2.1/3.6 MB 1.1 MB/s eta 0:00:02
+   ----------------------- ---------------- 2.1/3.6 MB 1.1 MB/s eta 0:00:02
+   ------------------------- -------------- 2.4/3.6 MB 1.1 MB/s eta 0:00:02
+   ---------------------------- ----------- 2.6/3.6 MB 1.1 MB/s eta 0:00:01
+   ------------------------------- -------- 2.9/3.6 MB 1.1 MB/s eta 0:00:01
+   ---------------------------------- ----- 3.1/3.6 MB 1.1 MB/s eta 0:00:01
+   ------------------------------------- -- 3.4/3.6 MB 1.1 MB/s eta 0:00:01
+   ---------------------------------------- 3.6/3.6 MB 1.1 MB/s eta 0:00:00
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading tokenizers-0.22.2-cp39-abi3-win_amd64.whl (2.7 MB)
+   ---------------------------------------- 0.0/2.7 MB ? eta -:--:--
+   --- ------------------------------------ 0.3/2.7 MB ? eta -:--:--
+   --- ------------------------------------ 0.3/2.7 MB ? eta -:--:--
+   ------- -------------------------------- 0.5/2.7 MB 1.1 MB/s eta 0:00:02
+   ----------- ---------------------------- 0.8/2.7 MB 1.1 MB/s eta 0:00:02
+   --------------- ------------------------ 1.0/2.7 MB 998.6 kB/s eta 0:00:02
+   ------------------- -------------------- 1.3/2.7 MB 1.0 MB/s eta 0:00:02
+   ---------------------- ----------------- 1.6/2.7 MB 1.0 MB/s eta 0:00:02
+   ---------------------- ----------------- 1.6/2.7 MB 1.0 MB/s eta 0:00:02
+   -------------------------- ------------- 1.8/2.7 MB 1.0 MB/s eta 0:00:01
+   ------------------------------ --------- 2.1/2.7 MB 1.1 MB/s eta 0:00:01
+   ---------------------------------- ----- 2.4/2.7 MB 1.1 MB/s eta 0:00:01
+   ---------------------------------------- 2.7/2.7 MB 1.1 MB/s eta 0:00:00
+Downloading chromadb-1.5.2-cp39-abi3-win_amd64.whl (21.9 MB)
+   ---------------------------------------- 0.0/21.9 MB ? eta -:--:--
+   ---------------------------------------- 0.0/21.9 MB ? eta -:--:--
+   ---------------------------------------- 0.3/21.9 MB ? eta -:--:--
+    --------------------------------------- 0.5/21.9 MB 1.2 MB/s eta 0:00:18
+   - -------------------------------------- 0.8/21.9 MB 1.2 MB/s eta 0:00:18
+   - -------------------------------------- 1.0/21.9 MB 1.2 MB/s eta 0:00:17
+   -- ------------------------------------- 1.3/21.9 MB 1.2 MB/s eta 0:00:18
+   -- ------------------------------------- 1.6/21.9 MB 1.2 MB/s eta 0:00:18
+   --- ------------------------------------ 1.8/21.9 MB 1.2 MB/s eta 0:00:17
+   --- ------------------------------------ 2.1/21.9 MB 1.2 MB/s eta 0:00:17
+   ---- ----------------------------------- 2.4/21.9 MB 1.2 MB/s eta 0:00:16
+   ---- ----------------------------------- 2.6/21.9 MB 1.2 MB/s eta 0:00:16
+   ----- ---------------------------------- 2.9/21.9 MB 1.2 MB/s eta 0:00:16
+   ----- ---------------------------------- 3.1/21.9 MB 1.2 MB/s eta 0:00:16
+   ------ --------------------------------- 3.4/21.9 MB 1.2 MB/s eta 0:00:16
+   ------ --------------------------------- 3.7/21.9 MB 1.2 MB/s eta 0:00:15
+   ------- -------------------------------- 3.9/21.9 MB 1.2 MB/s eta 0:00:15
+   ------- -------------------------------- 4.2/21.9 MB 1.2 MB/s eta 0:00:15
+   -------- ------------------------------- 4.5/21.9 MB 1.2 MB/s eta 0:00:14
+   --------- ------------------------------ 5.0/21.9 MB 1.2 MB/s eta 0:00:14
+   --------- ------------------------------ 5.2/21.9 MB 1.3 MB/s eta 0:00:14
+   --------- ------------------------------ 5.2/21.9 MB 1.3 MB/s eta 0:00:14
+   ---------- ----------------------------- 5.5/21.9 MB 1.2 MB/s eta 0:00:14
+   ---------- ----------------------------- 5.8/21.9 MB 1.2 MB/s eta 0:00:14
+   ----------- ---------------------------- 6.0/21.9 MB 1.2 MB/s eta 0:00:13
+   ----------- ---------------------------- 6.3/21.9 MB 1.2 MB/s eta 0:00:13
+   ----------- ---------------------------- 6.6/21.9 MB 1.2 MB/s eta 0:00:13
+   ------------ --------------------------- 6.8/21.9 MB 1.2 MB/s eta 0:00:13
+   ------------- -------------------------- 7.3/21.9 MB 1.2 MB/s eta 0:00:12
+   ------------- -------------------------- 7.3/21.9 MB 1.2 MB/s eta 0:00:12
+   -------------- ------------------------- 7.9/21.9 MB 1.3 MB/s eta 0:00:12
+   -------------- ------------------------- 8.1/21.9 MB 1.3 MB/s eta 0:00:11
+   --------------- ------------------------ 8.4/21.9 MB 1.3 MB/s eta 0:00:11
+   --------------- ------------------------ 8.7/21.9 MB 1.3 MB/s eta 0:00:11
+   ---------------- ----------------------- 8.9/21.9 MB 1.3 MB/s eta 0:00:11
+   ---------------- ----------------------- 9.2/21.9 MB 1.3 MB/s eta 0:00:11
+   ----------------- ---------------------- 9.4/21.9 MB 1.3 MB/s eta 0:00:10
+   ----------------- ---------------------- 9.7/21.9 MB 1.3 MB/s eta 0:00:10
+   ------------------ --------------------- 10.0/21.9 MB 1.3 MB/s eta 0:00:10
+   ------------------ --------------------- 10.2/21.9 MB 1.3 MB/s eta 0:00:10
+   ------------------- -------------------- 10.5/21.9 MB 1.3 MB/s eta 0:00:10
+   ------------------- -------------------- 10.7/21.9 MB 1.3 MB/s eta 0:00:09
+   -------------------- ------------------- 11.0/21.9 MB 1.3 MB/s eta 0:00:09
+   -------------------- ------------------- 11.3/21.9 MB 1.3 MB/s eta 0:00:09
+   --------------------- ------------------ 11.5/21.9 MB 1.3 MB/s eta 0:00:09
+   --------------------- ------------------ 11.8/21.9 MB 1.3 MB/s eta 0:00:09
+   ---------------------- ----------------- 12.1/21.9 MB 1.3 MB/s eta 0:00:08
+   ---------------------- ----------------- 12.3/21.9 MB 1.3 MB/s eta 0:00:08
+   ---------------------- ----------------- 12.3/21.9 MB 1.3 MB/s eta 0:00:08
+   ----------------------- ---------------- 12.8/21.9 MB 1.3 MB/s eta 0:00:08
+   ----------------------- ---------------- 12.8/21.9 MB 1.3 MB/s eta 0:00:08
+   ----------------------- ---------------- 13.1/21.9 MB 1.2 MB/s eta 0:00:08
+   ------------------------ --------------- 13.4/21.9 MB 1.2 MB/s eta 0:00:07
+   ------------------------ --------------- 13.6/21.9 MB 1.2 MB/s eta 0:00:07
+   ------------------------- -------------- 13.9/21.9 MB 1.2 MB/s eta 0:00:07
+   ------------------------- -------------- 14.2/21.9 MB 1.2 MB/s eta 0:00:07
+   -------------------------- ------------- 14.4/21.9 MB 1.2 MB/s eta 0:00:07
+   -------------------------- ------------- 14.7/21.9 MB 1.2 MB/s eta 0:00:06
+   --------------------------- ------------ 14.9/21.9 MB 1.2 MB/s eta 0:00:06
+   --------------------------- ------------ 15.2/21.9 MB 1.2 MB/s eta 0:00:06
+   ---------------------------- ----------- 15.5/21.9 MB 1.2 MB/s eta 0:00:06
+   ----------------------------- ---------- 16.0/21.9 MB 1.2 MB/s eta 0:00:05
+   ----------------------------- ---------- 16.3/21.9 MB 1.2 MB/s eta 0:00:05
+   ------------------------------ --------- 16.5/21.9 MB 1.2 MB/s eta 0:00:05
+   ------------------------------ --------- 16.8/21.9 MB 1.2 MB/s eta 0:00:05
+   ------------------------------- -------- 17.0/21.9 MB 1.2 MB/s eta 0:00:04
+   ------------------------------- -------- 17.3/21.9 MB 1.2 MB/s eta 0:00:04
+   -------------------------------- ------- 17.6/21.9 MB 1.2 MB/s eta 0:00:04
+   -------------------------------- ------- 17.8/21.9 MB 1.2 MB/s eta 0:00:04
+   --------------------------------- ------ 18.1/21.9 MB 1.2 MB/s eta 0:00:04
+   --------------------------------- ------ 18.4/21.9 MB 1.2 MB/s eta 0:00:03
+   ---------------------------------- ----- 18.6/21.9 MB 1.2 MB/s eta 0:00:03
+   ---------------------------------- ----- 18.9/21.9 MB 1.2 MB/s eta 0:00:03
+   ----------------------------------- ---- 19.1/21.9 MB 1.2 MB/s eta 0:00:03
+   ----------------------------------- ---- 19.4/21.9 MB 1.2 MB/s eta 0:00:02
+   ----------------------------------- ---- 19.7/21.9 MB 1.2 MB/s eta 0:00:02
+   ------------------------------------ --- 19.9/21.9 MB 1.3 MB/s eta 0:00:02
+   ------------------------------------ --- 20.2/21.9 MB 1.3 MB/s eta 0:00:02
+   ------------------------------------- -- 20.4/21.9 MB 1.3 MB/s eta 0:00:02
+   ------------------------------------- -- 20.7/21.9 MB 1.2 MB/s eta 0:00:01
+   -------------------------------------- - 21.2/21.9 MB 1.3 MB/s eta 0:00:01
+   ---------------------------------------  21.5/21.9 MB 1.3 MB/s eta 0:00:01
+   ---------------------------------------  21.8/21.9 MB 1.3 MB/s eta 0:00:01
+   ---------------------------------------- 21.9/21.9 MB 1.3 MB/s eta 0:00:00
+Downloading posthog-5.4.0-py3-none-any.whl (105 kB)
+Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.5-cp313-cp313-win_amd64.whl (142 kB)
+Using cached idna-3.11-py3-none-any.whl (71 kB)
+Using cached urllib3-2.6.3-py3-none-any.whl (131 kB)
+Downloading umap_learn-0.5.11-py3-none-any.whl (90 kB)
+Using cached scikit_learn-1.8.0-cp313-cp313-win_amd64.whl (8.0 MB)
+Using cached numpy-2.4.2-cp313-cp313-win_amd64.whl (12.3 MB)
+Using cached pandas-3.0.1-cp313-cp313-win_amd64.whl (9.7 MB)
+Using cached matplotlib-3.10.8-cp313-cp313-win_amd64.whl (8.1 MB)
+Using cached seaborn-0.13.2-py3-none-any.whl (294 kB)
+Downloading fastapi-0.135.1-py3-none-any.whl (116 kB)
+Downloading uvicorn-0.41.0-py3-none-any.whl (68 kB)
+Downloading scikit_fuzzy-0.5.0-py2.py3-none-any.whl (920 kB)
+   ---------------------------------------- 0.0/920.8 kB ? eta -:--:--
+   ----------- ---------------------------- 262.1/920.8 kB ? eta -:--:--
+   ---------------------- ----------------- 524.3/920.8 kB 1.2 MB/s eta 0:00:01
+   ---------------------------------- ----- 786.4/920.8 kB 1.3 MB/s eta 0:00:01
+   ---------------------------------------- 920.8/920.8 kB 1.2 MB/s eta 0:00:00
+Using cached scipy-1.17.1-cp313-cp313-win_amd64.whl (36.5 MB)
+Using cached tqdm-4.67.3-py3-none-any.whl (78 kB)
+Using cached annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+Downloading bcrypt-5.0.0-cp39-abi3-win_amd64.whl (150 kB)
+Downloading build-1.4.0-py3-none-any.whl (24 kB)
+Using cached certifi-2026.2.25-py3-none-any.whl (153 kB)
+Using cached click-8.3.1-py3-none-any.whl (108 kB)
+Using cached contourpy-1.3.3-cp313-cp313-win_amd64.whl (226 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached distro-1.9.0-py3-none-any.whl (20 kB)
+Downloading filelock-3.25.0-py3-none-any.whl (26 kB)
+Using cached fonttools-4.61.1-cp313-cp313-win_amd64.whl (2.3 MB)
+Downloading fsspec-2026.2.0-py3-none-any.whl (202 kB)
+Downloading grpcio-1.78.0-cp313-cp313-win_amd64.whl (4.8 MB)
+   ---------------------------------------- 0.0/4.8 MB ? eta -:--:--
+   -- ------------------------------------- 0.3/4.8 MB ? eta -:--:--
+   ---- ----------------------------------- 0.5/4.8 MB 1.3 MB/s eta 0:00:04
+   ------ --------------------------------- 0.8/4.8 MB 1.3 MB/s eta 0:00:04
+   -------- ------------------------------- 1.0/4.8 MB 1.3 MB/s eta 0:00:03
+   ---------- ----------------------------- 1.3/4.8 MB 1.3 MB/s eta 0:00:03
+   ------------- -------------------------- 1.6/4.8 MB 1.3 MB/s eta 0:00:03
+   --------------- ------------------------ 1.8/4.8 MB 1.3 MB/s eta 0:00:03
+   ----------------- ---------------------- 2.1/4.8 MB 1.3 MB/s eta 0:00:03
+   ------------------- -------------------- 2.4/4.8 MB 1.3 MB/s eta 0:00:02
+   --------------------- ------------------ 2.6/4.8 MB 1.3 MB/s eta 0:00:02
+   ------------------------ --------------- 2.9/4.8 MB 1.3 MB/s eta 0:00:02
+   -------------------------- ------------- 3.1/4.8 MB 1.3 MB/s eta 0:00:02
+   ---------------------------- ----------- 3.4/4.8 MB 1.3 MB/s eta 0:00:02
+   ------------------------------ --------- 3.7/4.8 MB 1.3 MB/s eta 0:00:01
+   -------------------------------- ------- 3.9/4.8 MB 1.3 MB/s eta 0:00:01
+   ---------------------------------- ----- 4.2/4.8 MB 1.3 MB/s eta 0:00:01
+   ------------------------------------- -- 4.5/4.8 MB 1.3 MB/s eta 0:00:01
+   ---------------------------------------- 4.8/4.8 MB 1.3 MB/s eta 0:00:00
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached joblib-1.5.3-py3-none-any.whl (309 kB)
+Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Using cached attrs-25.4.0-py3-none-any.whl (67 kB)
+Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Using cached kiwisolver-1.4.9-cp313-cp313-win_amd64.whl (73 kB)
+Downloading kubernetes-35.0.0-py2.py3-none-any.whl (2.0 MB)
+   ---------------------------------------- 0.0/2.0 MB ? eta -:--:--
+   ----- ---------------------------------- 0.3/2.0 MB ? eta -:--:--
+   ---------- ----------------------------- 0.5/2.0 MB 1.1 MB/s eta 0:00:02
+   --------------- ------------------------ 0.8/2.0 MB 1.2 MB/s eta 0:00:02
+   -------------------- ------------------- 1.0/2.0 MB 1.2 MB/s eta 0:00:01
+   -------------------- ------------------- 1.0/2.0 MB 1.2 MB/s eta 0:00:01
+   ------------------------------- -------- 1.6/2.0 MB 1.2 MB/s eta 0:00:01
+   ------------------------------------ --- 1.8/2.0 MB 1.2 MB/s eta 0:00:01
+   ---------------------------------------- 2.0/2.0 MB 1.2 MB/s eta 0:00:00
+Downloading durationpy-0.10-py3-none-any.whl (3.9 kB)
+Downloading mmh3-5.2.1-cp313-cp313-win_amd64.whl (41 kB)
+Downloading numba-0.64.0-cp313-cp313-win_amd64.whl (2.8 MB)
+   ---------------------------------------- 0.0/2.8 MB ? eta -:--:--
+   --- ------------------------------------ 0.3/2.8 MB ? eta -:--:--
+   ------- -------------------------------- 0.5/2.8 MB 1.3 MB/s eta 0:00:02
+   ------- -------------------------------- 0.5/2.8 MB 1.3 MB/s eta 0:00:02
+   ----------- ---------------------------- 0.8/2.8 MB 1.1 MB/s eta 0:00:02
+   --------------- ------------------------ 1.0/2.8 MB 1.2 MB/s eta 0:00:02
+   ------------------- -------------------- 1.3/2.8 MB 1.2 MB/s eta 0:00:02
+   ---------------------- ----------------- 1.6/2.8 MB 1.2 MB/s eta 0:00:01
+   -------------------------- ------------- 1.8/2.8 MB 1.2 MB/s eta 0:00:01
+   ---------------------------------- ----- 2.4/2.8 MB 1.2 MB/s eta 0:00:01
+   -------------------------------------- - 2.6/2.8 MB 1.2 MB/s eta 0:00:01
+   ---------------------------------------- 2.8/2.8 MB 1.2 MB/s eta 0:00:00
+Using cached llvmlite-0.46.0-cp313-cp313-win_amd64.whl (38.1 MB)
+Downloading onnxruntime-1.24.3-cp313-cp313-win_amd64.whl (12.6 MB)
+   ---------------------------------------- 0.0/12.6 MB ? eta -:--:--
+   ---------------------------------------- 0.0/12.6 MB ? eta -:--:--
+   - -------------------------------------- 0.5/12.6 MB 1.5 MB/s eta 0:00:09
+   -- ------------------------------------- 0.8/12.6 MB 1.4 MB/s eta 0:00:09
+   --- ------------------------------------ 1.0/12.6 MB 1.4 MB/s eta 0:00:09
+   ---- ----------------------------------- 1.3/12.6 MB 1.3 MB/s eta 0:00:09
+   ---- ----------------------------------- 1.6/12.6 MB 1.3 MB/s eta 0:00:09
+   ---- ----------------------------------- 1.6/12.6 MB 1.3 MB/s eta 0:00:09
+   ------ --------------------------------- 2.1/12.6 MB 1.3 MB/s eta 0:00:09
+   ------- -------------------------------- 2.4/12.6 MB 1.3 MB/s eta 0:00:08
+   -------- ------------------------------- 2.6/12.6 MB 1.3 MB/s eta 0:00:08
+   --------- ------------------------------ 2.9/12.6 MB 1.3 MB/s eta 0:00:08
+   --------- ------------------------------ 3.1/12.6 MB 1.3 MB/s eta 0:00:08
+   ---------- ----------------------------- 3.4/12.6 MB 1.3 MB/s eta 0:00:08
+   ----------- ---------------------------- 3.7/12.6 MB 1.3 MB/s eta 0:00:07
+   ------------ --------------------------- 3.9/12.6 MB 1.3 MB/s eta 0:00:07
+   ------------- -------------------------- 4.2/12.6 MB 1.3 MB/s eta 0:00:07
+   -------------- ------------------------- 4.5/12.6 MB 1.3 MB/s eta 0:00:07
+   -------------- ------------------------- 4.7/12.6 MB 1.3 MB/s eta 0:00:07
+   --------------- ------------------------ 5.0/12.6 MB 1.3 MB/s eta 0:00:06
+   ---------------- ----------------------- 5.2/12.6 MB 1.3 MB/s eta 0:00:06
+   ----------------- ---------------------- 5.5/12.6 MB 1.3 MB/s eta 0:00:06
+   ------------------ --------------------- 5.8/12.6 MB 1.3 MB/s eta 0:00:06
+   ------------------- -------------------- 6.0/12.6 MB 1.3 MB/s eta 0:00:06
+   ------------------- -------------------- 6.3/12.6 MB 1.3 MB/s eta 0:00:05
+   -------------------- ------------------- 6.6/12.6 MB 1.3 MB/s eta 0:00:05
+   ---------------------- ----------------- 7.1/12.6 MB 1.3 MB/s eta 0:00:05
+   ---------------------- ----------------- 7.1/12.6 MB 1.3 MB/s eta 0:00:05
+   ------------------------ --------------- 7.6/12.6 MB 1.3 MB/s eta 0:00:04
+   ------------------------ --------------- 7.9/12.6 MB 1.3 MB/s eta 0:00:04
+   ------------------------- -------------- 8.1/12.6 MB 1.3 MB/s eta 0:00:04
+   -------------------------- ------------- 8.4/12.6 MB 1.3 MB/s eta 0:00:04
+   --------------------------- ------------ 8.7/12.6 MB 1.3 MB/s eta 0:00:04
+   ---------------------------- ----------- 8.9/12.6 MB 1.3 MB/s eta 0:00:03
+   ----------------------------- ---------- 9.2/12.6 MB 1.3 MB/s eta 0:00:03
+   ----------------------------- ---------- 9.4/12.6 MB 1.3 MB/s eta 0:00:03
+   ------------------------------ --------- 9.7/12.6 MB 1.3 MB/s eta 0:00:03
+   ------------------------------- -------- 10.0/12.6 MB 1.3 MB/s eta 0:00:03
+   -------------------------------- ------- 10.2/12.6 MB 1.3 MB/s eta 0:00:02
+   --------------------------------- ------ 10.5/12.6 MB 1.3 MB/s eta 0:00:02
+   ---------------------------------- ----- 10.7/12.6 MB 1.3 MB/s eta 0:00:02
+   ---------------------------------- ----- 11.0/12.6 MB 1.3 MB/s eta 0:00:02
+   ----------------------------------- ---- 11.3/12.6 MB 1.3 MB/s eta 0:00:02
+   ------------------------------------ --- 11.5/12.6 MB 1.3 MB/s eta 0:00:01
+   ------------------------------------- -- 11.8/12.6 MB 1.3 MB/s eta 0:00:01
+   -------------------------------------- - 12.1/12.6 MB 1.3 MB/s eta 0:00:01
+   ---------------------------------------  12.3/12.6 MB 1.3 MB/s eta 0:00:01
+   ---------------------------------------- 12.6/12.6 MB 1.3 MB/s eta 0:00:00
+Downloading opentelemetry_api-1.40.0-py3-none-any.whl (68 kB)
+Using cached importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+Downloading opentelemetry_exporter_otlp_proto_grpc-1.40.0-py3-none-any.whl (20 kB)
+Downloading opentelemetry_exporter_otlp_proto_common-1.40.0-py3-none-any.whl (18 kB)
+Downloading opentelemetry_proto-1.40.0-py3-none-any.whl (72 kB)
+Using cached googleapis_common_protos-1.72.0-py3-none-any.whl (297 kB)
+Downloading opentelemetry_sdk-1.40.0-py3-none-any.whl (141 kB)
+Downloading opentelemetry_semantic_conventions-0.61b0-py3-none-any.whl (231 kB)
+Using cached protobuf-6.33.5-cp310-abi3-win_amd64.whl (437 kB)
+Downloading orjson-3.11.7-cp313-cp313-win_amd64.whl (124 kB)
+Downloading overrides-7.7.0-py3-none-any.whl (17 kB)
+Using cached pillow-12.1.1-cp313-cp313-win_amd64.whl (7.0 MB)
+Downloading pybase64-1.4.3-cp313-cp313-win_amd64.whl (35 kB)
+Using cached pydantic-2.12.5-py3-none-any.whl (463 kB)
+Using cached pydantic_core-2.41.5-cp313-cp313-win_amd64.whl (2.0 MB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading pynndescent-0.6.0-py3-none-any.whl (73 kB)
+Using cached pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Downloading pypika-0.51.1-py2.py3-none-any.whl (60 kB)
+Using cached pyyaml-6.0.3-cp313-cp313-win_amd64.whl (154 kB)
+Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Downloading regex-2026.2.28-cp313-cp313-win_amd64.whl (277 kB)
+Using cached rich-14.3.3-py3-none-any.whl (310 kB)
+Using cached markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading rpds_py-0.30.0-cp313-cp313-win_amd64.whl (240 kB)
+Downloading safetensors-0.7.0-cp38-abi3-win_amd64.whl (341 kB)
+Using cached starlette-0.52.1-py3-none-any.whl (74 kB)
+Using cached anyio-4.12.1-py3-none-any.whl (113 kB)
+Using cached tenacity-9.1.4-py3-none-any.whl (28 kB)
+Using cached threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Using cached torch-2.10.0-cp313-cp313-win_amd64.whl (113.8 MB)
+Using cached networkx-3.6.1-py3-none-any.whl (2.1 MB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Downloading typer-0.24.1-py3-none-any.whl (56 kB)
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Using cached typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Using cached httptools-0.7.1-cp313-cp313-win_amd64.whl (85 kB)
+Downloading python_dotenv-1.2.2-py3-none-any.whl (22 kB)
+Using cached watchfiles-1.1.1-cp313-cp313-win_amd64.whl (288 kB)
+Downloading websocket_client-1.9.0-py3-none-any.whl (82 kB)
+Using cached websockets-16.0-cp313-cp313-win_amd64.whl (178 kB)
+Using cached zipp-3.23.0-py3-none-any.whl (10 kB)
+Using cached flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Downloading importlib_resources-6.5.2-py3-none-any.whl (37 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached markupsafe-3.0.3-cp313-cp313-win_amd64.whl (15 kB)
+Downloading pyproject_hooks-1.2.0-py3-none-any.whl (10 kB)
+Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+Downloading oauthlib-3.3.1-py3-none-any.whl (160 kB)
+Using cached setuptools-82.0.0-py3-none-any.whl (1.0 MB)
+Using cached tzdata-2025.3-py2.py3-none-any.whl (348 kB)
+Building wheels for collected packages: langdetect
+  Building wheel for langdetect (pyproject.toml): started
+  Building wheel for langdetect (pyproject.toml): finished with status 'done'
+  Created wheel for langdetect: filename=langdetect-1.0.9-py3-none-any.whl size=993363 sha256=47d0c973d541bf65e925384c23abd32d283c2bbfd8f8c39545d69ece16d70bc9
+  Stored in directory: c:\users\asus\appdata\local\pip\cache\wheels\eb\87\25\2dddf1c94e1786054e25022ec5530bfed52bad86d882999c48
+Successfully built langdetect
+Installing collected packages: scikit-fuzzy, pypika, mpmath, flatbuffers, durationpy, zipp, websockets, websocket-client, urllib3, tzdata, typing_extensions, tqdm, threadpoolctl, tenacity, sympy, shellingham, setuptools, safetensors, rpds-py, regex, pyyaml, python-dotenv, pyproject_hooks, pyparsing, pybase64, protobuf, pillow, overrides, orjson, oauthlib, numpy, networkx, mmh3, mdurl, MarkupSafe, llvmlite, langdetect, kiwisolver, joblib, importlib-resources, idna, httptools, hf-xet, h11, fsspec, fonttools, filelock, distro, cycler, click, charset_normalizer, certifi, bcrypt, backoff, attrs, annotated-types, annotated-doc, uvicorn, typing-inspection, scipy, requests, referencing, pydantic-core, pandas, opentelemetry-proto, onnxruntime, numba, markdown-it-py, jinja2, importlib-metadata, httpcore, grpcio, googleapis-common-protos, contourpy, build, anyio, watchfiles, torch, starlette, scikit-learn, rich, requests-oauthlib, pydantic, posthog, opentelemetry-exporter-otlp-proto-common, opentelemetry-api, matplotlib, jsonschema-specifications, httpx, typer, seaborn, pynndescent, opentelemetry-semantic-conventions, kubernetes, jsonschema, fastapi, umap-learn, opentelemetry-sdk, huggingface-hub, tokenizers, opentelemetry-exporter-otlp-proto-grpc, transformers, chromadb, sentence-transformers
+
+   ----------------------------------------   0/104 [scikit-fuzzy]
+    ---------------------------------------   2/104 [mpmath]
+    ---------------------------------------   2/104 [mpmath]
+    ---------------------------------------   2/104 [mpmath]
+   - --------------------------------------   5/104 [zipp]
+   -- -------------------------------------   6/104 [websockets]
+   -- -------------------------------------   7/104 [websocket-client]
+   --- ------------------------------------   8/104 [urllib3]
+   --- ------------------------------------   9/104 [tzdata]
+   --- ------------------------------------   9/104 [tzdata]
+   --- ------------------------------------  10/104 [typing_extensions]
+   ---- -----------------------------------  12/104 [threadpoolctl]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ----- ----------------------------------  14/104 [sympy]
+   ------ ---------------------------------  16/104 [setuptools]
+   ------ ---------------------------------  16/104 [setuptools]
+   ------ ---------------------------------  16/104 [setuptools]
+   ------ ---------------------------------  16/104 [setuptools]
+   ------ ---------------------------------  16/104 [setuptools]
+   ------ ---------------------------------  16/104 [setuptools]
+   ------ ---------------------------------  16/104 [setuptools]
+   ------ ---------------------------------  16/104 [setuptools]
+   ------ ---------------------------------  16/104 [setuptools]
+   ------- --------------------------------  19/104 [regex]
+   -------- -------------------------------  23/104 [pyparsing]
+   --------- ------------------------------  25/104 [protobuf]
+   --------- ------------------------------  25/104 [protobuf]
+   ---------- -----------------------------  26/104 [pillow]
+   ---------- -----------------------------  26/104 [pillow]
+   ---------- -----------------------------  26/104 [pillow]
+   ----------- ----------------------------  29/104 [oauthlib]
+   ----------- ----------------------------  29/104 [oauthlib]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  30/104 [numpy]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ----------- ----------------------------  31/104 [networkx]
+   ------------- --------------------------  35/104 [llvmlite]
+   ------------- --------------------------  35/104 [llvmlite]
+   ------------- --------------------------  35/104 [llvmlite]
+   ------------- --------------------------  35/104 [llvmlite]
+   -------------- -------------------------  38/104 [joblib]
+   -------------- -------------------------  38/104 [joblib]
+   --------------- ------------------------  39/104 [importlib-resources]
+   --------------- ------------------------  41/104 [httptools]
+   ---------------- -----------------------  44/104 [fsspec]
+   ---------------- -----------------------  44/104 [fsspec]
+   ----------------- ----------------------  45/104 [fonttools]
+   ----------------- ----------------------  45/104 [fonttools]
+   ----------------- ----------------------  45/104 [fonttools]
+   ----------------- ----------------------  45/104 [fonttools]
+   ----------------- ----------------------  45/104 [fonttools]
+   ----------------- ----------------------  45/104 [fonttools]
+   ----------------- ----------------------  45/104 [fonttools]
+   ----------------- ----------------------  45/104 [fonttools]
+   ----------------- ----------------------  45/104 [fonttools]
+   ------------------ ---------------------  48/104 [cycler]
+   ------------------- --------------------  50/104 [charset_normalizer]
+   -------------------- -------------------  54/104 [attrs]
+   --------------------- ------------------  57/104 [uvicorn]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ---------------------- -----------------  59/104 [scipy]
+   ----------------------- ----------------  60/104 [requests]
+   ----------------------- ----------------  62/104 [pydantic-core]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------ ---------------  63/104 [pandas]
+   ------------------------- --------------  65/104 [onnxruntime]
+   ------------------------- --------------  65/104 [onnxruntime]
+   ------------------------- --------------  65/104 [onnxruntime]
+   ------------------------- --------------  65/104 [onnxruntime]
+   ------------------------- --------------  65/104 [onnxruntime]
+   ------------------------- --------------  65/104 [onnxruntime]
+   ------------------------- --------------  65/104 [onnxruntime]
+   ------------------------- --------------  65/104 [onnxruntime]
+   ------------------------- --------------  65/104 [onnxruntime]
+   ------------------------- --------------  65/104 [onnxruntime]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  66/104 [numba]
+   ------------------------- --------------  67/104 [markdown-it-py]
+   -------------------------- -------------  68/104 [jinja2]
+   -------------------------- -------------  69/104 [importlib-metadata]
+   -------------------------- -------------  70/104 [httpcore]
+   --------------------------- ------------  71/104 [grpcio]
+   --------------------------- ------------  72/104 [googleapis-common-protos]
+   --------------------------- ------------  72/104 [googleapis-common-protos]
+   ---------------------------- -----------  74/104 [build]
+   ---------------------------- -----------  75/104 [anyio]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ----------------------------- ----------  77/104 [torch]
+   ------------------------------ ---------  78/104 [starlette]
+   ------------------------------ ---------  78/104 [starlette]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  79/104 [scikit-learn]
+   ------------------------------ ---------  80/104 [rich]
+   ------------------------------ ---------  80/104 [rich]
+   ------------------------------- --------  81/104 [requests-oauthlib]
+   ------------------------------- --------  82/104 [pydantic]
+   ------------------------------- --------  82/104 [pydantic]
+   ------------------------------- --------  82/104 [pydantic]
+   ------------------------------- --------  83/104 [posthog]
+   -------------------------------- -------  85/104 [opentelemetry-api]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  86/104 [matplotlib]
+   --------------------------------- ------  88/104 [httpx]
+   ---------------------------------- -----  90/104 [seaborn]
+   ---------------------------------- -----  90/104 [seaborn]
+   ----------------------------------- ----  91/104 [pynndescent]
+   --------------------------- ---  92/104 [opentelemetry-semantic-conventions]
+   --------------------------- ---  92/104 [opentelemetry-semantic-conventions]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ----------------------------------- ----  93/104 [kubernetes]
+   ------------------------------------ ---  94/104 [jsonschema]
+   ------------------------------------ ---  95/104 [fastapi]
+   ------------------------------------ ---  96/104 [umap-learn]
+   ------------------------------------- --  97/104 [opentelemetry-sdk]
+   ------------------------------------- --  98/104 [huggingface-hub]
+   ------------------------------------- --  98/104 [huggingface-hub]
+   ------------------------------------- --  98/104 [huggingface-hub]
+   ------------------------------------- --  98/104 [huggingface-hub]
+   ------------------------------------- --  98/104 [huggingface-hub]
+   ------------------------- - 100/104 [opentelemetry-exporter-otlp-proto-grpc]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   -------------------------------------- - 101/104 [transformers]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  102/104 [chromadb]
+   ---------------------------------------  103/104 [sentence-transformers]
+   ---------------------------------------  103/104 [sentence-transformers]
+   ---------------------------------------  103/104 [sentence-transformers]
+   ---------------------------------------  103/104 [sentence-transformers]
+   ---------------------------------------  103/104 [sentence-transformers]
+   ---------------------------------------  103/104 [sentence-transformers]
+   ---------------------------------------- 104/104 [sentence-transformers]
+
+Successfully installed MarkupSafe-3.0.3 annotated-doc-0.0.4 annotated-types-0.7.0 anyio-4.12.1 attrs-25.4.0 backoff-2.2.1 bcrypt-5.0.0 build-1.4.0 certifi-2026.2.25 charset_normalizer-3.4.5 chromadb-1.5.2 click-8.3.1 contourpy-1.3.3 cycler-0.12.1 distro-1.9.0 durationpy-0.10 fastapi-0.135.1 filelock-3.25.0 flatbuffers-25.12.19 fonttools-4.61.1 fsspec-2026.2.0 googleapis-common-protos-1.72.0 grpcio-1.78.0 h11-0.16.0 hf-xet-1.3.2 httpcore-1.0.9 httptools-0.7.1 httpx-0.28.1 huggingface-hub-1.5.0 idna-3.11 importlib-metadata-8.7.1 importlib-resources-6.5.2 jinja2-3.1.6 joblib-1.5.3 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 kiwisolver-1.4.9 kubernetes-35.0.0 langdetect-1.0.9 llvmlite-0.46.0 markdown-it-py-4.0.0 matplotlib-3.10.8 mdurl-0.1.2 mmh3-5.2.1 mpmath-1.3.0 networkx-3.6.1 numba-0.64.0 numpy-2.4.2 oauthlib-3.3.1 onnxruntime-1.24.3 opentelemetry-api-1.40.0 opentelemetry-exporter-otlp-proto-common-1.40.0 opentelemetry-exporter-otlp-proto-grpc-1.40.0 opentelemetry-proto-1.40.0 opentelemetry-sdk-1.40.0 opentelemetry-semantic-conventions-0.61b0 orjson-3.11.7 overrides-7.7.0 pandas-3.0.1 pillow-12.1.1 posthog-5.4.0 protobuf-6.33.5 pybase64-1.4.3 pydantic-2.12.5 pydantic-core-2.41.5 pynndescent-0.6.0 pyparsing-3.3.2 pypika-0.51.1 pyproject_hooks-1.2.0 python-dotenv-1.2.2 pyyaml-6.0.3 referencing-0.37.0 regex-2026.2.28 requests-2.32.5 requests-oauthlib-2.0.0 rich-14.3.3 rpds-py-0.30.0 safetensors-0.7.0 scikit-fuzzy-0.5.0 scikit-learn-1.8.0 scipy-1.17.1 seaborn-0.13.2 sentence-transformers-5.2.3 setuptools-82.0.0 shellingham-1.5.4 starlette-0.52.1 sympy-1.14.0 tenacity-9.1.4 threadpoolctl-3.6.0 tokenizers-0.22.2 torch-2.10.0 tqdm-4.67.3 transformers-5.3.0 typer-0.24.1 typing-inspection-0.4.2 typing_extensions-4.15.0 tzdata-2025.3 umap-learn-0.5.11 urllib3-2.6.3 uvicorn-0.41.0 watchfiles-1.1.1 websocket-client-1.9.0 websockets-16.0 zipp-3.23.0
+
+
+[notice] A new release of pip is available: 25.1.1 -> 26.0.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+
+=== Cell 4 (exec 2) ===
+requirements.txt written
+
+
+=== Cell 5 (exec 3) ===
+All imports successful.
+
+
+=== Cell 7 (exec 4) ===
+Total documents: 18846
+Categories (20): ['alt.atheism', 'comp.graphics', 'comp.os.ms-windows.misc', 'comp.sys.ibm.pc.hardware', 'comp.sys.mac.hardware', 'comp.windows.x', 'misc.forsale', 'rec.autos', 'rec.motorcycles', 'rec.sport.baseball', 'rec.sport.hockey', 'sci.crypt', 'sci.electronics', 'sci.med', 'sci.space', 'soc.religion.christian', 'talk.politics.guns', 'talk.politics.mideast', 'talk.politics.misc', 'talk.religion.misc']
+
+============================================================
+Sample document (showing typical noise):
+============================================================
+From: Mamatha Devineni Ratnam <mr47+@andrew.cmu.edu>
+Subject: Pens fans reactions
+Organization: Post Office, Carnegie Mellon, Pittsburgh, PA
+Lines: 12
+NNTP-Posting-Host: po4.andrew.cmu.edu
+
+
+
+I am sure some bashers of Pens fans are pretty confused about the lack
+of any kind of posts about the recent Pens massacre of the Devils. Actually,
+I am  bit puzzled too and a bit relieved. However, I am going to put an end
+to non-PIttsburghers' relief with a bit of praise for the Pens. Man, they
+are killing those Devils worse than I thought. Jagr just showed you why
+he is much better than his regular season stats. He is also a lot
+fo fun to watch in the playoffs. Bowman should let JAgr have a lot of
+fun in the next couple of games since the Pens are going to beat the pulp out of Jersey anyway. I was very disappointed not to see the Islanders lose the final
+regular season game.          PENS RULE!!!
+
+
+
+
+=== Cell 9 (exec 5) ===
+clean_document() defined.
+
+
+=== Cell 10 (exec 6) ===
+Cleaning documents: 100%|██████████| 18846/18846 [00:51<00:00, 369.42it/s]
+
+============================================================
+CLEANING STATISTICS
+============================================================
+Original document count : 18846
+Cleaned document count  : 14025
+Total dropped           : 4821
+
+Drop breakdown:
+  too_short                     :  4021
+  low_content_density           :   660
+  too_short_for_langdetect      :    75
+  non_english                   :    64
+  langdetect_error              :     1
+
+Avg doc length BEFORE cleaning: 284 words
+Avg doc length AFTER  cleaning: 236 words
+
+
+
+
+=== Cell 12 (exec 7) ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10899.79it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+
+Embedding 14025 documents...
+
+Batches: 100%|██████████| 220/220 [04:57<00:00,  1.35s/it]
+Embeddings shape: (14025, 384)
+Saved embeddings.npy
+
+
+
+
+=== Cell 14 (exec 8) ===
+Adding to ChromaDB: 100%|██████████| 29/29 [00:16<00:00,  1.78it/s]
+ChromaDB collection size: 14025
+
+
+
+
+=== Cell 16 (exec 9) ===
+Loaded embeddings: (14025, 384)
+Fitting 50-dim UMAP (for clustering)...
+50-dim UMAP shape: (14025, 50)
+Fitting 2-dim UMAP (for visualization)...
+2-dim UMAP shape: (14025, 2)
+
+
+=== Cell 18 (exec 10) ===
+Running BIC/AIC sweep...
+
+GMM BIC/AIC: 100%|██████████| 8/8 [00:36<00:00,  4.61s/it]
+
+BIC elbow at k=10
+
+
+=== Cell 19 (exec 11) ===
+Running Silhouette sweep...
+
+KMeans Silhouette: 100%|██████████| 8/8 [00:04<00:00,  1.78it/s]
+Best silhouette at k=10
+
+
+
+
+=== Cell 20 (exec 12) ===
+Running Semantic Coherence sweep...
+
+Coherence: 100%|██████████| 5/5 [00:30<00:00,  6.18s/it]
+
+Best coherence at k=15
+
+
+=== Cell 21 (exec 13) ===
+BIC elbow: k=10
+Silhouette peak: k=10
+Coherence best: k=15
+
+>>> Selected optimal k = 10
+
+
+=== Cell 24 (exec 14) ===
+Fitting GMM with k=10 clusters...
+Cluster probabilities shape: (14025, 10)
+  Each row sums to: 1.0000 (should be ~1.0)
+Saved cluster_probs.npy and gmm.pkl
+
+
+=== Cell 25 (exec 15) ===
+Entropy statistics:
+  Mean:   0.0037
+  Median: 0.0000
+  Max:    0.6925
+  Min:    0.0000
+
+Documents with entropy > 1.5 (boundary docs): 0 (0.0%)
+
+
+=== Cell 27 (exec 16) ===
+
+======================================================================
+CLUSTER 0
+======================================================================
+
+--- Top 5 Dominant Documents ---
+  [1] p=1.000 | soc.religion.christian | Chris Mussack writes:  How about:  	The Holocaust 	The Spanish Inquisition 	Jonestown  (just to name a few) ?  Authorities sometimes tell people to do...
+  [2] p=1.000 | soc.religion.christian | In article <May.11.02.39.05.1993.28328@athos.rutgers.edu> carlson@ab24.larc.nasa.gov (Ann Carlson) writes:  [bible verses ag./ used ag. homosexuality ...
+  [3] p=1.000 | alt.atheism | A new alternative to Scouting for those "unacceptable to BSA" for reasons of religious or sexual preference:  From: "BOYD R. CRITZ, III" <71611.365@Co...
+  [4] p=1.000 | talk.religion.misc | In article <1qknu0INNbhv@shelley.u.washington.edu>, > Christian:  washed in the blood of the lamb.  This will be a hard task, because most cultures us...
+  [5] p=1.000 | talk.religion.misc | <1993Apr14.130150.28931@lynx.dac.northeastern.edu> <79615@cup.portal.com>   <1qn5rn$q7p@csugrad.cs.vt.edu> Lines: 144  930418  Do what thou wilt shall...
+
+--- Top Keywords: article, believe, com, does, don, edu, god, jesus, just, know, like, people, say, think, writes
+
+--- Category Distribution (prob > 0.6, top 5):
+      soc.religion.christian                  : 832
+      alt.atheism                             : 455
+      talk.religion.misc                      : 371
+      talk.politics.misc                      : 170
+      sci.med                                 : 69
+
+--- Boundary Documents (high entropy, 2nd-best = this cluster):
+    entropy=0.493 | clusters=[5 0] p=[0.80506885 0.19493559] | In article <lefty-260493134641@lefty.apple.com>, lefty@apple.com (Lefty) writes:  Wrong about what?   I think they are c...
+    entropy=0.189 | clusters=[5 0] p=[0.9531007  0.04690355] | In article <1993Apr14.030334.8650@ultb.isc.rit.edu>, snm6394@ultb.isc.rit.edu (S.N. Mozumder ) writes:  So the only way ...
+    entropy=0.145 | clusters=[6 0] p=[0.96701735 0.03293638] | <kmr4.1582.734882394@po.CWRU.edu> NNTP-Posting-Host: andrew.cmu.edu In-Reply-To: <kmr4.1582.734882394@po.CWRU.edu>  kmr4...
+    entropy=0.031 | clusters=[8 0] p=[0.9951594  0.00483631] | In article <C5wDuw.L1o@nmrdc1.nmrdc.nnmc.navy.mil> dsc3jfs@nmrdc1.nmrdc.nnmc.navy.mil (Jim Small) writes:  I think you a...
+    entropy=0.020 | clusters=[6 0] p=[0.9971202  0.00288274] | <FLAX.93Apr5224449@frej.teknikum.uu.se> 	<1993Apr5.221759.28472@thunder.mcrcim.mcgill.edu> NNTP-Posting-Host: frej.tekni...
+
+======================================================================
+CLUSTER 1
+======================================================================
+
+--- Top 5 Dominant Documents ---
+  [1] p=1.000 | comp.graphics | In article <1qkgbuINNs9n@shelley.u.washington.edu> bolson@carson.u.washington.edu (Edward Bolson) writes:  Wouldn't this require a hyper-sphere.  In 3...
+  [2] p=1.000 | comp.windows.x | In article <1993May13.212121.29048@colorado.edu>, hoswell@alumni.cs.colorado.edu (Mike Hoswell) writes: |>  |> I'm quite familiar with a variety of wi...
+  [3] p=1.000 | comp.graphics | I am looking for a package which takes as inputs a set of geometric objects defined by unions of convex polytopes specified in some manner, say by ine...
+  [4] p=1.000 | comp.graphics | I don't have nor Imagine nor Real 3d, but as old Amiga user I think you should take a look also to  Real 3d 2.0 for the Amiga. I saw Imagine 2.0 on th...
+  [5] p=1.000 | comp.windows.x | In article <ccdw.735917051@kudu> ccdw@kudu.ru.ac.za (Dave Wilson) writes:  You have to do the same sorts of things that Xt does with its main loop. Th...
+
+--- Top Keywords: available, com, dos, edu, file, files, image, jpeg, like, program, software, use, version, window, windows
+
+--- Category Distribution (prob > 0.6, top 5):
+      comp.windows.x                          : 655
+      comp.graphics                           : 502
+      comp.os.ms-windows.misc                 : 325
+      comp.sys.mac.hardware                   : 81
+      comp.sys.ibm.pc.hardware                : 35
+
+--- Boundary Documents (high entropy, 2nd-best = this cluster):
+    entropy=0.691 | clusters=[4 1] p=[0.5290255  0.47097033] | In article <C5KxIx.5Ct@cbnewsd.cb.att.com> rcj2@cbnewsd.cb.att.com (ray.c.jender) writes:      INTENSIVE JAPANESE AT THE...
+    entropy=0.687 | clusters=[9 1] p=[0.5552012  0.44480485] | In article <1993Apr15.180633.3437@trintex.uucp>, charles@tinman.dev.prodigy.com () writes:  	ahh, yes, this is a fun top...
+    entropy=0.665 | clusters=[9 1] p=[0.6177106  0.38228315] | Sorry, I did`nt tell exactly what I need.  I need a utility for automatic updating (deleting, adding, changing) of *.ini...
+    entropy=0.663 | clusters=[9 1] p=[0.6212268  0.37877613] | ------------------------------------------------------------------------- Netters!  I have seen some postings on PC/IP f...
+    entropy=0.537 | clusters=[9 1] p=[0.7715147  0.22848777] | I use a Nanao 20" Multisync and switch between a Windows 1024x768 and a Sparc 1+ display.  Works quite well at these res...
+
+======================================================================
+CLUSTER 2
+======================================================================
+
+--- Top 5 Dominant Documents ---
+  [1] p=1.000 | rec.sport.baseball | On a cold, damp night last night at Tiger Stadium, Dave Wells, David Haas, Bob  MacDonald, and Mike Henneman combined for a 3-1 victory over the Texas...
+  [2] p=1.000 | rec.sport.baseball | Does anybody know what is going on with Lankford? I know he was out for a few games with a slight injury, but since he has beenback (and before the in...
+  [3] p=1.000 | rec.sport.baseball | maynard@ramsey.cs.laurentian.ca (Roger Maynard) writes:  How is that possible?  He was on the Albuquerque Leftturns last year. How could you possibly ...
+  [4] p=1.000 | rec.sport.hockey | In article <1993Apr26.023650.16749@spang.Camosun.BC.CA>, ua256@freenet.Victoria.BC.CA (Tom Moffat) says:  And won't they have to change their name to ...
+  [5] p=1.000 | rec.sport.hockey | In article <1993Apr22.220409.10862@wuecl.wustl.edu>, jca2@cec1.wustl.edu (Joseph Charles Achkar) writes: |> In article <vzhivov.735454735@cunews> vzhi...
+
+--- Top Keywords: article, don, edu, game, games, good, hockey, just, like, season, team, think, time, writes, year
+
+--- Category Distribution (prob > 0.6, top 5):
+      rec.sport.hockey                        : 682
+      rec.sport.baseball                      : 633
+      sci.med                                 : 3
+      rec.motorcycles                         : 3
+      talk.politics.mideast                   : 3
+
+======================================================================
+CLUSTER 3
+======================================================================
+
+--- Top 5 Dominant Documents ---
+  [1] p=1.000 | rec.autos | In article <C4wJGq.A40@constellation.ecn.uoknor.edu> callison@uokmax.ecn.uoknor.edu (James P. Callison) writes:  Bad driving habits can damage a car i...
+  [2] p=1.000 | rec.autos | Thanx Craig.... in addition to Craigs coments - and to clear up any  further confusion.... the 200SX (of USA) was reffered to as a Silvia Turbo in the...
+  [3] p=1.000 | rec.autos | In article <C63rrw.1G9w@austin.ibm.com> $LOGIN@austin.ibm.com writes:  justify all you want.  extended warranties are a ripoff, high profit item for t...
+  [4] p=1.000 | rec.motorcycles | Do I have to be the one to say it?  	DON'T BE SO STUPID AS TO LEAVE YOUR HELMET ON THE SEAT WHERE IT CAN 	FALL DOWN AND GO BOOM!  	That kind of fall i...
+  [5] p=1.000 | rec.autos | I'm not sure if this made it out so i'll try again.  I have an Ecklar's (sp?) Corvette car cover for sale.  The cover is canvas on the outside and fel...
+
+--- Top Keywords: article, bike, car, com, don, edu, good, just, know, like, new, think, time, ve, writes
+
+--- Category Distribution (prob > 0.6, top 5):
+      rec.motorcycles                         : 626
+      rec.autos                               : 612
+      sci.electronics                         : 61
+      misc.forsale                            : 40
+      sci.space                               : 16
+
+--- Boundary Documents (high entropy, 2nd-best = this cluster):
+    entropy=0.117 | clusters=[4 3] p=[0.9750629  0.02493349] | Two or three years ago I saw a report on TV about a company that had  developed a method of making solar cells on a flex...
+    entropy=0.000 | clusters=[4 3] p=[9.9998474e-01 1.5279407e-05] | In article <1993Apr5.220610.1532@sequent.com>, bigfoot@sequent.com (Gregory Smith) writes: |> mccall@mksol.dseg.ti.com (...
+    entropy=0.000 | clusters=[4 3] p=[1.0000000e+00 2.2632088e-08] | dmunroe@vcd.hp.com (Dave Gauge) writes: B B  Well, in my BMW I like the little light that turns on when you are running ...
+    entropy=0.000 | clusters=[8 3] p=[1.0000000e+00 2.2033053e-08] | jrm@gnv.ifas.ufl.edu writes:  [stuff deleted]  Really?  How do you avoid situations which encourage criminals?  I'd real...
+    entropy=0.000 | clusters=[8 3] p=[1.0000000e+00 1.9583451e-08] | This is a two-sided problem. Unfortunately our culture has been deteriorating over time. The "breeding" of these low-lif...
+
+======================================================================
+CLUSTER 4
+======================================================================
+
+--- Top 5 Dominant Documents ---
+  [1] p=1.000 | misc.forsale | Hi to all.  Since all of you could also be a seller as well as a buyer, I'd like to bring this issue for discussion - what would be the best solution ...
+  [2] p=1.000 | sci.electronics | Recently I posted two oscilliscopes for sale. One has sold, the other is still available:  Used, good condition:  Hitachi V-422 40MHz Dual-Channel Por...
+  [3] p=1.000 | misc.forsale | I have a Roberto Clemente 1969 Topps baseball card for sale, in near-mint condition (really as close to mint condition as you can get).  It lists for ...
+  [4] p=1.000 | sci.electronics | Andy Shiekh (shiekh@ictp.trieste.it) wrote: :   I have seen the existance of electronics solder with a 2% silver : content that seems to have good wet...
+  [5] p=1.000 | sci.electronics | In article <734953838.AA00510@insane.apana.org.au> peter.m@insane.apana.org.au (Peter Tryndoch) writes:  My Beckman died a few days ago, thanks do abo...
+
+--- Top Keywords: 00, 10, article, com, don, edu, good, just, know, like, new, time, use, used, writes
+
+--- Category Distribution (prob > 0.6, top 5):
+      sci.electronics                         : 414
+      misc.forsale                            : 336
+      sci.crypt                               : 42
+      rec.autos                               : 42
+      comp.sys.mac.hardware                   : 25
+
+--- Boundary Documents (high entropy, 2nd-best = this cluster):
+    entropy=0.693 | clusters=[9 4] p=[0.5177967 0.4821979] | Organisation: SKS Computer Consulting, Inc. Organization: Digital Equipment Corporation - Marlboro, MA Lines: 49  Howdy ...
+    entropy=0.692 | clusters=[9 4] p=[0.52286214 0.4771404 ] | I bought this chip from Suncoast Technology and tried to build their dtmf decoder circuit.  But it's not working...  If ...
+    entropy=0.691 | clusters=[9 4] p=[0.5839895  0.41410422] | News-Software: VAX/VMS VNEWS 1.41      In article <1993Apr21.160620.3396@cabell.vcu.edu>, his3rrb@cabell.vcu.edu (Robert...
+    entropy=0.691 | clusters=[9 4] p=[0.5331665  0.46683484] | NeXTstation 25MHz 68040 8/105                      Moto 56001 DSP          Megapixel (perfect - no dimming or shaking)  ...
+    entropy=0.689 | clusters=[9 4] p=[0.5454522  0.45455477] | I have this used equipment for sale, everything is negotiable!  1200 Baud Compuadd Internal Modem, all docs and software...
+
+======================================================================
+CLUSTER 5
+======================================================================
+
+--- Top 5 Dominant Documents ---
+  [1] p=1.000 | talk.politics.mideast | I wrote:                  @ From:  Kayhan Havai # 1026 @ -------------------------- @                           @ o Dr. Namaki,  deputy minister of he...
+  [2] p=1.000 | talk.politics.mideast | In article <1993Apr27.023914.9453@Virginia.EDU> ab4z@Virginia.EDU ("Andi Beyer") writes:  There were a great many Germans, Poles and others who did no...
+  [3] p=1.000 | talk.politics.mideast | In the following report: _Turkey Eyes Regional Role_ ANKARA, Turkey (AP) April 27, 1993, we find in the last paragraph:  [Turanist] Although Premier S...
+  [4] p=1.000 | talk.politics.mideast | In article <93332@hydra.gatech.EDU> gt1091a@prism.gatech.EDU (gt1091a gt1091a KAAN,TIMUCIN) wrote:  [KAAN] Who the hell is this guy David Davidian. I ...
+  [5] p=1.000 | sci.med | SREBRENICA'S DOCTOR RECOUNTS TOWN'S LIVING HELL       By Laura Pitter     TUZLA, Bosnia, Reuter - Neret Mujanovic was a pathologist when he trekked th...
+
+--- Top Keywords: armenian, armenians, article, don, edu, israel, israeli, jews, just, know, like, people, said, turkish, writes
+
+--- Category Distribution (prob > 0.6, top 5):
+      talk.politics.mideast                   : 684
+      alt.atheism                             : 97
+      talk.politics.misc                      : 18
+      soc.religion.christian                  : 16
+      talk.religion.misc                      : 12
+
+--- Boundary Documents (high entropy, 2nd-best = this cluster):
+    entropy=0.231 | clusters=[0 5] p=[0.9405892  0.05814395] | In article <May.11.02.37.07.1993.28120@athos.rutgers.edu>, dan@ingres.com (a Rose arose) writes: |> In the Monday, May 1...
+    entropy=0.117 | clusters=[0 5] p=[0.97628367 0.02264442] | In the Monday, May 10 morning edition of the San Jose Mercury News an article by Sandra Gonzales at the top of page 12A ...
+    entropy=0.019 | clusters=[0 5] p=[0.997242   0.00275325] | In article <Apr.21.03.26.18.1993.1352@geneva.rutgers.edu> reedr@cgsvax.claremont.edu writes:  It is funny how this one l...
+    entropy=0.006 | clusters=[0 5] p=[9.992069e-01 7.885301e-04] | <sandvik-150493181533@sandvik-kent.apple.com>  	<1993Apr16.181605.15072@ra.royalroads.ca>  	<sandvik-160493205451@sandvi...
+    entropy=0.006 | clusters=[0 5] p=[9.9923742e-01 7.6790503e-04] | DROPLET VOL 1, No 11, Part 3  D R O P L E T From The Vast Ocean Of The Miraculous Qur'an  Translations from the Arabic a...
+
+======================================================================
+CLUSTER 6
+======================================================================
+
+--- Top 5 Dominant Documents ---
+  [1] p=1.000 | sci.space | In article <1993Apr20.120311.1@pa881a.inland.com> schiewer@pa881a.inland.com (Don Schiewer) writes:  The "face" is an accident of light and shadow.  T...
+  [2] p=1.000 | sci.space | What would all of you out there in net land think of the big 6 (Martin Mariatta, Boeing, Mcdonell Douglas, General Dynamics, Lockheed, Rockwell) getti...
+  [3] p=1.000 | sci.space | sysmgr@king.eng.umd.edu (Doug Mohney) writes:  Doug-- Actually, if memory serves, the Atlas is an outgrowth of the old  Titan ICBM.  If so, there's pr...
+  [4] p=1.000 | alt.atheism | <1993Apr16.015931.12153@mnemosyne.cs.du.edu> NNTP-Posting-Host: andrew.cmu.edu In-Reply-To: <1993Apr16.015931.12153@mnemosyne.cs.du.edu>  jcopelan@nyx...
+  [5] p=1.000 | sci.space | In article <1993Apr21.140804.15028@draper.com> mrf4276@egbsun12.NoSubdomain.NoDomain (Matthew R. Feulner) writes:  When the Lunar Society's $500M esti...
+
+--- Top Keywords: article, com, data, earth, edu, just, launch, like, nasa, new, people, space, time, use, writes
+
+--- Category Distribution (prob > 0.6, top 5):
+      sci.space                               : 665
+      comp.graphics                           : 35
+      talk.politics.misc                      : 33
+      rec.motorcycles                         : 30
+      sci.electronics                         : 27
+
+--- Boundary Documents (high entropy, 2nd-best = this cluster):
+    entropy=0.644 | clusters=[8 6] p=[0.65579605 0.3442014 ] | In article <15APR199320340428@stdvax> abdkw@stdvax (David Ward) writes:  Also in pure speculation:  Parity errors in mem...
+    entropy=0.600 | clusters=[8 6] p=[0.71200097 0.28800383] | In article <1993Apr26.054446.29764@sol.ctr.columbia.edu> phoenix@startide.ctr.columbia.edu (Ali Lemer) writes:  	Nice si...
+    entropy=0.589 | clusters=[8 6] p=[0.7237212  0.27628255] | <79700@cup.portal.com> <lt03anINNm6n@saltillo.cs.utexas.edu> Lines: 41  A person posted certain stuff to this newsgroup,...
+    entropy=0.569 | clusters=[8 6] p=[0.7438062 0.2561872] | I caught up a mailmessage from an NCD guy, who stated that Tek might be quitting it's X terminal activities and would be...
+    entropy=0.552 | clusters=[4 6] p=[0.7587659  0.24122809] | Hi, folks out there !  I don't know whether I am in the right newsgroup, but I have a question.  If I am completely wron...
+
+======================================================================
+CLUSTER 7
+======================================================================
+
+--- Top 5 Dominant Documents ---
+  [1] p=1.000 | sci.med | In article <1q1tbnINNnfn@life.ai.mit.edu> sundar@ai.mit.edu writes:  Essential tremor is a progressive hereditary tremor that gets worse when the pati...
+  [2] p=1.000 | alt.atheism | News-Software: VAX/VMS VNEWS 1.41      In article <1993Apr3.195642.25261@njitgw.njit.edu>, dmu5391@hertz.njit.edu (David Utidjian Eng.Sci.) writes... ...
+  [3] p=1.000 | sci.med | A friend was recently admitted to North Carolina Memorial Hospital because of suspected meningitis.  Serious business.  They wanted to do a lumbar pun...
+  [4] p=1.000 | talk.politics.misc | In article <1qrohrINNipe@senator-bedfellow.MIT.EDU> wdstarr@athena.mit.edu (Wil liam December Starr) writes:  You said it worked so well with tobacco....
+  [5] p=1.000 | sci.med | In article <C5uBrn.F0u@fig.citib.com> ghica@fig.citib.com (Renato Ghica) writes:  You probably mean "RoHypnol", a member of the benzodiazepine family,...
+
+--- Top Keywords: article, com, don, drug, edu, health, just, know, like, medical, patients, people, time, use, writes
+
+--- Category Distribution (prob > 0.6, top 5):
+      sci.med                                 : 647
+      talk.politics.misc                      : 59
+      sci.space                               : 14
+      soc.religion.christian                  : 6
+      alt.atheism                             : 6
+
+--- Boundary Documents (high entropy, 2nd-best = this cluster):
+    entropy=0.000 | clusters=[0 7] p=[1.0000000e+00 1.5493205e-08] | In article <1993Apr18.163212.9577@walter.bellcore.com>, jchen@wind.bellcore.com (Jason Chen) writes: =There is no contra...
+    entropy=0.000 | clusters=[0 7] p=[1.0000000e+00 1.4794599e-09] | In article <lsj4gnINNl6c@saltillo.cs.utexas.edu> turpin@cs.utexas.edu (Russell Turpin) writes:  As usual, you are missin...
+    entropy=0.000 | clusters=[0 7] p=[1.000000e+00 3.076336e-11] | <sandvik-140493233557@sandvik-kent.apple.com> <1qk73q$3fj@agate.berkeley.edu>  <syt5br_@rpi.edu> <nyikos.735335582@milo....
+    entropy=0.000 | clusters=[0 7] p=[1.0000000e+00 1.1761931e-11] | In article <C5JoDH.9IG@news.Hawaii.Edu> lady@uhunix.uhcc.Hawaii.Edu (Lee Lady) writes:  Shades of James Watson!  That's ...
+    entropy=0.000 | clusters=[0 7] p=[1.0000000e+00 6.2689636e-12] | In article <1993Apr16.155919.28040@cs.rochester.edu> fulk@cs.rochester.edu (Mark Fulk) writes:  The danger in philosophi...
+
+======================================================================
+CLUSTER 8
+======================================================================
+
+--- Top 5 Dominant Documents ---
+  [1] p=1.000 | sci.crypt | In article <Apr18.194927.17048@yuma.ACNS.ColoState.EDU> holland@CS.ColoState.EDU (douglas craig holland) writes:  [...]  I don't know about classified...
+  [2] p=1.000 | sci.crypt | The actual algorithm is classified, however, their main thrust here is for cellular phones, and encryption is only over the radio end, not end to end,...
+  [3] p=1.000 | talk.politics.misc | XUserAgent: Nuntius v1.1.1d17 XXXMessageID: <A7FB1EE739030642@steve_martin.mrg.uswest.com> Organization: U S WEST, MRG NntpPostingHost: steve_martin.m...
+  [4] p=1.000 | sci.crypt | In article <1993Apr22.223906.25929@lehman.com> pmetzger@snark.shearson.com (Perry E. Metzger) writes:  You're blowing smoke.  Qualcomm wants to sell t...
+  [5] p=1.000 | talk.politics.guns | In article <C5wJFz.Bus@news.udel.edu>, roby@chopin.udel.edu (Scott W Roby) writes:  Feel free to patronize me all you like; I need the tips. :-) Serio...
+
+--- Top Keywords: article, com, don, edu, government, gun, just, key, like, people, right, think, time, use, writes
+
+--- Category Distribution (prob > 0.6, top 5):
+      sci.crypt                               : 681
+      talk.politics.guns                      : 652
+      talk.politics.misc                      : 314
+      talk.religion.misc                      : 77
+      alt.atheism                             : 40
+
+--- Boundary Documents (high entropy, 2nd-best = this cluster):
+    entropy=0.663 | clusters=[0 8] p=[0.62134063 0.37866634] | News-Software: VAX/VMS VNEWS 1.41     Lines: 21  In article <chrisb.734068710@bAARNie>, chrisb@tafe.sa.edu.au (Chris BEL...
+    entropy=0.439 | clusters=[6 8] p=[0.8402361  0.15976839] | <1993Apr22.022324.17172@news.clarkson.edu> 	<strnlghtC5wJn3.4t1@netcom.com> <C5wMu9.MqJ@cs.uiuc.edu> Organization: /home...
+    entropy=0.132 | clusters=[0 8] p=[0.9707874  0.02921699] | As quoted from <1993Apr18.000152.2339@gnv.ifas.ufl.edu> by jrm@gnv.ifas.ufl.edu:  Kind of sounds like Plessy v. Ferguson...
+    entropy=0.101 | clusters=[0 8] p=[0.98053855 0.01786299] | <1993Apr5.024150.10193@wam.umd.edu> NNTP-Posting-Host: po2.andrew.cmu.edu In-Reply-To: <1993Apr5.024150.10193@wam.umd.ed...
+    entropy=0.076 | clusters=[6 8] p=[0.98551846 0.01447693] | Woops.  I'm not sure if I screwed up, but this is either forgery or some  sort of mistake (aborted post that didn't abor...
+
+======================================================================
+CLUSTER 9
+======================================================================
+
+--- Top 5 Dominant Documents ---
+  [1] p=1.000 | comp.sys.ibm.pc.hardware | I just installed a DX2-66 CPU in a clone motherboard, and tried mounting a CPU  cooler on the chip.  After about 1/2 hour, the weight of the cooler wa...
+  [2] p=1.000 | misc.forsale | CAD Setup For Sale:  G486PLB Local Bus Motherboard   Can use up to 32MB of SIMMS (256k/1M/4M)   9 expansion slots (8 16-bit slots, 1 32-bit slot)   We...
+  [3] p=1.000 | sci.electronics | Many thanks to those who replied to my appeal for info on a drive I have which is 3.5" 600RPM!!  I now have some information on how to modify this for...
+  [4] p=1.000 | comp.os.ms-windows.misc | In article <15APR199321275870@cvdv99.mayo.edu>, fisk@cvdv99.mayo.edu (Tom Fisk | 2D-337 STM | 5-4341) writes: |> In article <C5JLDC.HL9@news.cso.uiuc....
+  [5] p=1.000 | comp.sys.mac.hardware | Disclaimer: Personally, I really don't care who you think I speak for. Distribution: usa Moderator: Rec.Arts.Comics.Info Lines: 40  David_Anthony_Guev...
+
+--- Top Keywords: article, card, com, does, don, drive, edu, just, know, like, problem, scsi, use, windows, writes
+
+--- Category Distribution (prob > 0.6, top 5):
+      comp.sys.ibm.pc.hardware                : 687
+      comp.sys.mac.hardware                   : 575
+      comp.os.ms-windows.misc                 : 304
+      sci.electronics                         : 183
+      misc.forsale                            : 156
+
+--- Boundary Documents (high entropy, 2nd-best = this cluster):
+    entropy=0.682 | clusters=[4 9] p=[0.57300884 0.42699513] | Sharp brand "Pocket Computer" model PC-1246     Dimensions;  3.5 x 5 x 0.5 inches.          Has 15-digit LCD display    ...
+    entropy=0.677 | clusters=[4 9] p=[0.58895606 0.41105095] | SMARTCAM VERSION 7 FOR SALE. Purchased in August 1992. Latest version! Also willing to sell 486 33dx. 124mg hard drive. ...
+    entropy=0.665 | clusters=[4 9] p=[0.61878604 0.38121137] | Greetings:  Here is a list of items for the 3B1 which I am selling:  dBase III - Full dBase III multiuser Development/Ru...
+    entropy=0.647 | clusters=[1 9] p=[0.6502459  0.34976053] | Has anyone else observed this behaviour and if so, what have you done to cure it?  One workstation in a WfW network goes...
+    entropy=0.625 | clusters=[4 9] p=[0.68290913 0.31708834] | *********************Sony B+W Watchman TV*********************  Sony B+W 2.5 inch TV.  It is in excellent condition.  It...
+
+
+=== Cell 28 (exec 17) ===
+Saved cluster_overlap_heatmap.png
+
+
+=== Cell 29 (exec 18) ===
+Saved umap_visualization.png
+Saved umap_original_categories.png
+
+
+=== Cell 31 (exec 19) ===
+SemanticCache initialized with threshold=0.85, k=10
+Stats: {'total_entries': 0, 'hit_count': 0, 'miss_count': 0, 'hit_rate': 0.0, 'avg_lookup_time_ms': 0.0, 'partition_sizes': {}}
+
+
+=== Cell 33 (exec 20) ===
+Seed queries: 40
+Test queries: 50
+
+
+=== Cell 34 (exec 21) ===
+Threshold sweep: 100%|██████████| 8/8 [00:00<00:00, 80.90it/s]
+  t=0.60 | hit_rate=0.460 | precision=1.000 | FPR=0.000
+  t=0.65 | hit_rate=0.360 | precision=1.000 | FPR=0.000
+  t=0.70 | hit_rate=0.160 | precision=1.000 | FPR=0.000
+  t=0.75 | hit_rate=0.100 | precision=1.000 | FPR=0.000
+  t=0.80 | hit_rate=0.000 | precision=0.000 | FPR=0.000
+  t=0.85 | hit_rate=0.000 | precision=0.000 | FPR=0.000
+  t=0.90 | hit_rate=0.000 | precision=0.000 | FPR=0.000
+  t=0.95 | hit_rate=0.000 | precision=0.000 | FPR=0.000
+
+Sweep complete.
+
+
+
+
+=== Cell 35 (exec 22) ===
+
+Recommended threshold: 0.60
+  At this threshold:
+    Hit Rate:            0.460
+    Precision:           1.000
+    False Positive Rate: 0.000
+
+
+=== Cell 38 (exec 23) ===
+Writing app.py
+
+
+=== Cell 40 (exec 24) ===
+Saved umap_model.pkl
+Saved gmm.pkl
+Saved label_names.json
+
+============================================================
+ALL ARTIFACTS SAVED SUCCESSFULLY
+============================================================
+
+Files produced:
+  [OK] main.ipynb
+  [OK] app.py
+  [OK] requirements.txt
+  [OK] embeddings.npy
+  [OK] cluster_probs.npy
+  [OK] gmm.pkl
+  [OK] umap_model.pkl
+  [OK] label_names.json
+  [OK] cluster_selection_bic_aic.png
+  [OK] cluster_selection_silhouette.png
+  [OK] cluster_selection_coherence.png
+  [OK] umap_visualization.png
+  [OK] umap_original_categories.png
+  [OK] cluster_overlap_heatmap.png
+  [OK] threshold_analysis.png
+  [OK] chroma_db/
+
+To start the API server, run:
+  uvicorn app:app --host 0.0.0.0 --port 8000
+
