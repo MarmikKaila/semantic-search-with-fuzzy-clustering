@@ -1,4 +1,4 @@
-# 🔍 Semantic Search System for 20 Newsgroups Dataset
+#  Semantic Search System for 20 Newsgroups Dataset
 
 A production-quality **semantic search system** with fuzzy clustering, a hand-built semantic cache, and a FastAPI REST service. Built from scratch without Redis or external caching libraries.
 
@@ -19,7 +19,7 @@ A production-quality **semantic search system** with fuzzy clustering, a hand-bu
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project implements a complete semantic search pipeline over the **20 Newsgroups dataset** (~20,000 news posts spanning 20 topic categories).
 
@@ -36,7 +36,7 @@ This project implements a complete semantic search pipeline over the **20 Newsgr
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -57,7 +57,7 @@ This project implements a complete semantic search pipeline over the **20 Newsgr
 
 ---
 
-## ⚙️ Requirements & Setup
+##  Requirements & Setup
 
 ### Prerequisites
 - Python 3.10+
@@ -103,7 +103,7 @@ pydantic==2.7.1
 
 ---
 
-## 📊 Part 1: Embedding & Vector Database
+##  Part 1: Embedding & Vector Database
 
 ### Data Cleaning Pipeline
 
@@ -159,7 +159,7 @@ Avg doc length AFTER : 236 words
 
 ---
 
-## 🎯 Part 2: Fuzzy Clustering
+##  Part 2: Fuzzy Clustering
 
 ### Why GMM Instead of KMeans?
 
@@ -352,7 +352,7 @@ The **similarity threshold** is the critical tunable parameter. We ran a sweep f
 
 ---
 
-## 🚀 Part 4: FastAPI Service
+##  Part 4: FastAPI Service
 
 ### Service Architecture
 
@@ -441,7 +441,7 @@ Interactive API documentation available at `http://localhost:8000/docs`:
 
 ---
 
-## 🏃 Running the Project
+##  Running the Project
 
 ### Step 1: Environment Setup
 
@@ -520,7 +520,7 @@ Invoke-RestMethod -Uri "http://localhost:8000/cache/stats"
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Trademarkia AIML Task/
@@ -564,7 +564,7 @@ Trademarkia AIML Task/
 
 ---
 
-## 📊 Summary of Results
+##  Summary of Results
 
 | Metric | Value |
 |--------|-------|
@@ -582,7 +582,7 @@ Trademarkia AIML Task/
 
 ---
 
-## 🔑 Key Design Decisions
+##  Key Design Decisions
 
 1. **GMM on raw embeddings, not UMAP** — Preserves genuine semantic overlap between topics
 2. **Diagonal covariance** — Tractable in 384 dimensions while capturing per-feature variance
@@ -592,12 +592,12 @@ Trademarkia AIML Task/
 
 ---
 
-## 📝 License
+##  License
 
 This project was created as part of the Trademarkia ML Engineering assessment.
 
 ---
 
-## 👤 Author
+##  Author
 
-Submitted for evaluation by Trademarkia recruitment team.
+Submitted by Marmik Kaila for evaluation by Trademarkia recruitment team.
