@@ -264,7 +264,7 @@ This is exactly what fuzzy clustering is designed to capture.
 
 ---
 
-## 💾 Part 3: Semantic Cache
+##  Part 3: Semantic Cache
 
 ### Design Philosophy
 
